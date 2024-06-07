@@ -1,0 +1,23 @@
+{
+  "name": "samoa-sea-level",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js",
+    "build-server": "npm install",
+    "build-touchui": "cd island && npm install && npm run build",
+    "build-island": "cd touchui && npm install && npm run build",
+    "build": "concurrently \"npm run build-touchui\" \"npm run build-island\"",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}

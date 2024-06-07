@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flood Risk in American Samoa</title>
+  </head>
+  <body>
+    <!-- Add plus minus buttons -->
+
+    <!-- Buttons for shifting map left, right, up, down -->
+    <!-- Two columns one for buttons on for the map div -->
+    <div style="display: flex; flex-direction: column">
+      <div>
+        <h1 id="title">Flood Risk in American Samoa</h1>
+      </div>
+      <div style="display: flex">
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <h2>Year</h2>
+
+          <button class="button-am" id="select-hide">Hide Flood</button>
+          <button class="button-am" id="select-2030">2030</button>
+          <button class="button-am" id="select-2040">2040</button>
+          <button class="button-am" id="select-2050">2050</button>
+          <button class="button-am" id="select-2060">2060</button>
+          <button class="button-am" id="select-2070">2070</button>
+          <button class="button-am" id="select-2080">2080</button>
+          <button class="button-am" id="select-2090">2090</button>
+          <button class="button-am" id="select-2100">2100</button>
+          <button class="button-am" id="cycle">Cycle</button>
+          <h2>Controls</h2>
+
+          <button class="button-am" id="shift-left">Left</button>
+          <button class="button-am" id="shift-right">Right</button>
+          <button class="button-am" id="shift-up">Up</button>
+          <button class="button-am" id="shift-down">Down</button>
+          <button class="button-am" id="zoom-in">+</button>
+          <button class="button-am" id="zoom-out">-</button>
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <div class="map" id="map"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <!-- Add styel -->
+    <style>
+      body {
+        background: white;
+        color: black;
+      }
+      .map {
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+      }
+      .button-am {
+        border-radius: 1rem;
+        background-color: lightblue;
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    </style>
+  </body>
+</html>
